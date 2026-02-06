@@ -8,17 +8,58 @@ To write a program to predict the marks scored by a student using the simple lin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Import the standard Libraries.
 
-2.Set variables for assigning dataset values.
+1.Import Required Libraries
+ Import pandas, numpy, matplotlib, and sklearn libraries for data processing, visualization, model training, and error calculation.
 
-3.Import linear regression from sklearn.
+2.Load the Dataset
+ Read the CSV file containing student study hours and scores using pandas.
+ 
+3.Display Dataset
+   View the first few rows and last few rows of the dataset to understand the data.
+   Separate Independent and Dependent Variables
+   Store study hours as independent variable X.
+   Store student scores as dependent variable Y.
 
-4.Assign the points for representing in the graph.
+4.Split Dataset into Training and Testing Sets
+ Divide the data into training set and testing set.
 
-5.Predict the regression for marks by using the representation of the graph.
+5.Training data → Used to train the model
 
-6.Compare the graphs and hence we obtained the linear regression for the given datas. 
+6.Testing data → Used to test the model accuracy
+
+7.Create Linear Regression Model
+ Create an object for Linear Regression model.
+
+8.Train the Model
+ Train the model using training data (X_train and Y_train).
+
+9.Predict Test Results
+ Use the trained model to predict scores for testing data (X_test).
+
+10.Visualize Training Set Result
+
+ Plot scatter graph of training data.
+
+ Plot regression line (best fit line).
+
+11.Visualize Testing Set Result
+
+ Plot scatter graph of testing data.
+
+ Plot regression line using trained model.
+
+12.Calculate Error Metrics
+ Calculate model performance using:
+
+ Mean Squared Error (MSE)
+
+ Mean Absolute Error (MAE)
+
+ Root Mean Squared Error (RMSE)
+
+13.Display Error Values
+ Print MSE, MAE, and RMSE values.
 
 ## Program :
 ```
